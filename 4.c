@@ -14,7 +14,14 @@ void main() {
 	scanf("%d", &class_num);
 
 	for (int i = 0; i<class_num; i++) {
-
+		arr[i] = rand() % class_num + 1;
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				chk = 1;
+			}
+		}
 	}
 	printf("---결과 출력---");
 	printf("\n자리 배치 발표!\n");
